@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  color: #dc143c;
+  font-weight: bold;
+  border: 4px solid #dc143c;
+}
+.button:hover {
+  border: 4px solid #dc143c;
+}
+.button:active {
+  background-color: #dc143c;
+  border: 4px solid white;
+  color: white;
+}
+
+.navbar .menu li a {
+  border: #dc143c 4px solid;
+}
+
+.navbar .menu li a:active {
+  background-color: #dc143c;
+  border: 4px solid white;
+}
+
+.gap-x {
+  margin: 0px auto;
+  max-width: 900px;
+  width: 90vw;
+}
+
+.menu li > :not(ul, .menu-title, details, .btn).active {
+  background-color: #fff;
+  color: #dc143c;
+}
+
+.menu li > :not(ul, .menu-title, details, .btn) {
+  background-color: #dc143c;
+  border: #dc143c 4px solid;
+
+  color: white;
+}
+.menu li > :not(ul, .menu-title, details, .btn):active {
+  background-color: #dc143c;
+  border: 4px solid white;
+  color: white;
+}
